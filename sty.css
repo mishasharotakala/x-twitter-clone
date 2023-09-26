@@ -2,11 +2,14 @@
     display: grid;
     grid-template-columns: 275px auto 350px;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
-/* .right {
-    position: fixed;
-} */
+.right {
+    position: flex;
+    width: 350px;
+    align-items: center;
+}
 
 .icon {
     height:38px;
@@ -53,3 +56,38 @@
 /* .active .sidebarIcons .home {
     filter: invert(67%) sepia(60%) saturate(4956%) hue-rotate(176deg) brightness(95%) contrast(99%);
 } */
+
+.tweet {
+    display: flex;
+}
+
+.author_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tweet_header {
+    display: flex;
+}
+
+.author_name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #14171a;
+    margin: 4px;
+}
+
+.author_slug{
+    color: #5b7083;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 3px;
+}
+
+.publish_time {
+    margin-left: 5px;
+    color: #657786;
+    margin: 3px;
+}
